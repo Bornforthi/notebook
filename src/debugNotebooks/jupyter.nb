@@ -1,0 +1,15 @@
+---
+starboard:
+  plugins: 
+    - src: "http://localhost:8080/dist/index.js"
+      args:
+        serverSettings:
+          baseUrl: "https://localhost:8888"
+---
+# %% [jupyter]
+import matplotlib.pyplot as plt
+
+print("Hello!")
+
+plt.plot([x**3 for x in range(100)])
+plt.show()
